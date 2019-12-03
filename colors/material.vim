@@ -82,7 +82,7 @@ if g:material_theme_style == 'palenight'
   let s:comments = '#676e95'
   let s:selection = '#343b51'
   let s:guides = '#4e5579'
-  let s:line_numbers = '#3a3f58'
+  let s:line_numbers = '#37474f'
 elseif g:material_theme_style == 'darker'
   let s:bg = '#212121'
   let s:fg = '#eeffff'
@@ -167,7 +167,7 @@ call s:SetHighlight('ErrorMsg', s:bg, s:red, 'bold')
 call s:SetHighlight('FoldColumn', s:line_numbers, s:bg, '')
 call s:SetHighlight('Folded', s:brown, s:bg, 'bold')
 call s:SetHighlight('LineNr', s:line_numbers, '', '')
-call s:SetHighlight('MatchParen', s:comments, s:cyan, 'bold')
+call s:SetHighlight('MatchParen', s:comments, s:line_numbers, 'bold')
 call s:SetHighlight('ModeMsg', s:green, '', '')
 call s:SetHighlight('MoreMsg', s:green, '', '')
 call s:SetHighlight('NonText', s:comments, '', '')
